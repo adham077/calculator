@@ -1,6 +1,10 @@
 #include "stdio.h"
 #include "conio.h"
+
+#include "divison.c"
+
 #include "multiplication.c"
+
 
 void scan_input(float*,float*);
 
@@ -16,10 +20,20 @@ int main(void){
         
         switch(c){
 
+            
+           case '/':
+                scan_input(&a,&b);
+                printf("a*b=%d\n",Division(a,b));
+                break;
+
+                
+
+
             case '*':
                 scan_input(&a,&b);
                 printf("a*b=%d\n",multiplication(a,b));
                 break;
+
 
             default:
                 printf("invalid operation\n");
