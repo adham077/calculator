@@ -2,7 +2,7 @@
 #include "conio.h"
 
 #include "divison.c"
-
+#include "sub.c"
 #include "multiplication.c"
 
 
@@ -26,7 +26,10 @@ int main(void){
                 printf("a*b=%d\n",Division(a,b));
                 break;
 
-                
+            case '-':
+                scan_input(&a,&b);
+                printf("a*b=%d\n",subtract(a,b));
+                break;
 
 
             case '*':
