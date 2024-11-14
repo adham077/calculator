@@ -19,6 +19,7 @@ int main(void){
             case '*':
                 scan_input(&a,&b);
                 printf("a*b=%d\n",multiplication(a,b));
+                break;
 
             default:
                 printf("invalid operation\n");
