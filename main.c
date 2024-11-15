@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 
+#include "Add_Function.c"
 #include "division.c"
 #include "sub.c"
 #include "multiplication.c"
@@ -20,30 +21,34 @@ int main(void){
         c = getch();
         
         switch(c){
+			
+	   case '+':
+                scan_input(&a,&b);
+                printf("a+b=%d\n",AddFunction(a,b));
+                break;
 
-            
            case '/':
                 scan_input(&a,&b);
                 printf("a*b=%d\n",Division(a,b));
                 break;
 
-            case '-':
+           case '-':
                 scan_input(&a,&b);
                 printf("a*b=%d\n",subtract(a,b));
                 break;
 
 
-            case '*':
+           case '*':
                 scan_input(&a,&b);
                 printf("a*b=%d\n",multiplication(a,b));
                 break;
             
-            case '%'
+           case '%'
                 scan_input(&a,&b);
                 printf("a%b=%d\n",float_modulus(a,b));
                 break;
 
-            default:
+           default:
                 printf("invalid operation\n");
 
         }
