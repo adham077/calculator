@@ -1,9 +1,10 @@
-#include "stdio.h"
-#include "conio.h"
+#include <stdio.h>
+#include <conio.h>
 
-#include "divison.c"
+#include "division.c"
 #include "sub.c"
 #include "multiplication.c"
+#include "modulus.c""
 
 
 void scan_input(float*,float*);
@@ -36,7 +37,11 @@ int main(void){
                 scan_input(&a,&b);
                 printf("a*b=%d\n",multiplication(a,b));
                 break;
-
+            
+            case '%'
+                scan_input(&a,&b);
+                printf("a%b=%d\n",float_modulus(a,b));
+                break;
 
             default:
                 printf("invalid operation\n");
