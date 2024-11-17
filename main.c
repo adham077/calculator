@@ -34,7 +34,7 @@ int main(void){
 
            case '-':
                 scan_input(&a,&b);
-                printf("a*b=%d\n",subtract(a,b));
+                printf("a-b=%d\n",subtract(a,b));
                 break;
 
 
@@ -43,7 +43,7 @@ int main(void){
                 printf("a*b=%d\n",multiplication(a,b));
                 break;
             
-           case '%'
+           case '%':
                 scan_input(&a,&b);
                 printf("a%b=%d\n",float_modulus(a,b));
                 break;
