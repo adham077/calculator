@@ -1,0 +1,7 @@
+*.elf
+*.exe
+*.bin
+*.hex
+/build
+/CMake
+/Ninja
