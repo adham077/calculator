@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/division.dir/main.c.o -o division  libdiv.a 
