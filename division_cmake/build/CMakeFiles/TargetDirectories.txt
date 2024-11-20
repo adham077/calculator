@@ -1,0 +1,4 @@
+/mnt/f/embedded_linux/calculator/division_cmake/build/CMakeFiles/div.dir
+/mnt/f/embedded_linux/calculator/division_cmake/build/CMakeFiles/division.dir
+/mnt/f/embedded_linux/calculator/division_cmake/build/CMakeFiles/edit_cache.dir
+/mnt/f/embedded_linux/calculator/division_cmake/build/CMakeFiles/rebuild_cache.dir
