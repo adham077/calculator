@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-
-double AddFunction (float x,float y);
+#include "Add_Function.h"
 
 
 double AddFunction (float x,float y)
