@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.11.0)
+project(calculator C)
+include(${CMAKE_SOURCE_DIR}/config.cmake)
+add_executable(calculator main.c)
+generate_configuration("${OPERATIONS}")
+add_subdirectory(mul_module)
+target_link_libraries(calculator PRIVATE mul)

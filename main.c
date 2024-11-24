@@ -1,12 +1,6 @@
 #include <stdio.h>
 #include <conio.h>
-
-#include "Add_Function.c"
-#include "division.c"
-#include "sub.c"
-#include "multiplication.c"
-#include "modulus.c""
-
+#include "mul.h"
 
 void scan_input(float*,float*);
 
@@ -14,47 +8,28 @@ int main(void){
     do{
         char c;
         float a,b;
-        printf("\033c");        
-
+        printf("\033c");
+        flushall        
+        c=getch()
         printf("please enter your preffered operation: + - * / %\n ");
-        flushall;
-        c = getch();
+        
         
         switch(c){
-			
-	   case '+':
+            #ifdef mul
+            case '*':
                 scan_input(&a,&b);
-                printf("a+b=%d\n",AddFunction(a,b));
+                printf("a*b=%lf\n",multiplication(a,b));
                 break;
-
-           case '/':
-                scan_input(&a,&b);
-                printf("a*b=%d\n",Division(a,b));
-                break;
-
-           case '-':
-                scan_input(&a,&b);
-                printf("a-b=%d\n",subtract(a,b));
-                break;
-
-
-           case '*':
-                scan_input(&a,&b);
-                printf("a*b=%d\n",multiplication(a,b));
-                break;
+            #endif
             
-           case '%':
-                scan_input(&a,&b);
-                printf("a%b=%d\n",float_modulus(a,b));
-                break;
-
+          
            default:
                 printf("invalid operation\n");
 
         }
 
         printf("press any key if you want to continue, for exit press n");
-        flushall;
+        flushall
     }while(getch()!='n');
 
     return 0;
