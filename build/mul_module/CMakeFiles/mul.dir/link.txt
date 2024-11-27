@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmul.a CMakeFiles/mul.dir/src/mul.c.o
+/usr/bin/ranlib libmul.a

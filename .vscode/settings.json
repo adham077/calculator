@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/wsl.localhost/Ubuntu-22.04/home/adhamwalaa/iti_45/calculator"
+    "cmake.sourceDirectory": "/wsl.localhost/Ubuntu-22.04/home/adhamwalaa/iti_45/calculator",
+    "cmake.ignoreCMakeListsMissing": true
 }
