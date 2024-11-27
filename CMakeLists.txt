@@ -1,22 +1,6 @@
-cmake_minimum_required(VERSION 3.31)
-project(Calculator)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.31)
 
-# Enable Ninja (optional, if using Ninja)
-set(CMAKE_MAKE_PROGRAM Ninja)
-
-# Find Python
-find_program(PYTHON3_EXECUTABLE python3 REQUIRED)
-
-# Include the feature script (containing the macro)
-include(${CMAKE_SOURCE_DIR}/feature.cmake)
-
-# Define paths and variables
-set(PYTHON_SCRIPT ${CMAKE_SOURCE_DIR}/generate_config.py)
-set(CONFIG_FILE ${CMAKE_BINARY_DIR}/config.h)
-set(OPERATION "add" CACHE STRING "Calculator operation")
-
-# Use the macro to set up the custom command and target for config generation
-ADD_FEATURE_GENERATOR(${PYTHON_SCRIPT} ${OPERATION} ${CONFIG_FILE})
+project(Calculator C ) 
 
 # Add subdirectories for modules
 add_subdirectory(Add_Module)
@@ -25,8 +9,18 @@ add_subdirectory(division_cmake)
 add_subdirectory(sub_module)
 add_subdirectory(Modulus_Module)
 
-# Make the main target depend on the generated config
-add_dependencies(main ${GENERATE_TARGET})  # Ensures 'main' depends on the custom config generation
+# Add include directories for each driver
+include_directories(
+    Add_Module/Include
+    mul_module/inc
+    division_cmake/include
+    sub_module/include
+    Modulus_Module/Include
+)
 
-# Include the generated file in the main target
-target_include_directories(main PRIVATE ${CMAKE_BINARY_DIR})
+# Add the main executable
+add_executable(Calculator main.c)
+
+# Link all drivers to the main executable
+# Used PRIVATE here cuz Calculator is the final output and no other target will use it 
+target_link_libraries(Calculator PRIVATE Add_Module mul_module division_cmake sub_module Modulus_Module)
