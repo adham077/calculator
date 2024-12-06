@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.2.0)
-project(mul_feature C)
-include_directories("inc")
-add_library(mul STATIC src/mul.c)
-add_executable(mul_feature main.c)
-target_link_libraries(mul_feature PRIVATE mul)
+project(calculator C)
+include(${CMAKE_SOURCE_DIR}/config.cmake)
+add_subdirectory(division_module)
+add_executable(calculator main.c)
+generate_configuration("${OPERATIONS}")
+target_link_libraries(calculator PRIVATE div)
 
