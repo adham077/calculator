@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: modulus
+# Project: ModFeature
 # Configurations: 
 # =============================================================================
 
@@ -36,34 +36,34 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/fatma/Documents/ITI/calculator/Modulus_Module/build/
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target modulus
+# Object build statements for STATIC_LIBRARY target ModFeature
 
 
 #############################################
-# Order-only phony target for modulus
+# Order-only phony target for ModFeature
 
-build cmake_object_order_depends_target_modulus: phony || .
+build cmake_object_order_depends_target_ModFeature: phony || .
 
-build CMakeFiles/modulus.dir/src/modulus.c.o: C_COMPILER__modulus_unscanned_ /home/fatma/Documents/ITI/calculator/Modulus_Module/src/modulus.c || cmake_object_order_depends_target_modulus
-  DEP_FILE = CMakeFiles/modulus.dir/src/modulus.c.o.d
+build CMakeFiles/ModFeature.dir/src/modulus.c.o: C_COMPILER__ModFeature_unscanned_ /home/fatma/Documents/ITI/calculator/Modulus_Module/src/modulus.c || cmake_object_order_depends_target_ModFeature
+  DEP_FILE = CMakeFiles/ModFeature.dir/src/modulus.c.o.d
   INCLUDES = -I/home/fatma/Documents/ITI/calculator/Modulus_Module/Include
-  OBJECT_DIR = CMakeFiles/modulus.dir
-  OBJECT_FILE_DIR = CMakeFiles/modulus.dir/src
+  OBJECT_DIR = CMakeFiles/ModFeature.dir
+  OBJECT_FILE_DIR = CMakeFiles/ModFeature.dir/src
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target modulus
+# Link build statements for STATIC_LIBRARY target ModFeature
 
 
 #############################################
-# Link the static library libmodulus.a
+# Link the static library libModFeature.a
 
-build libmodulus.a: C_STATIC_LIBRARY_LINKER__modulus_ CMakeFiles/modulus.dir/src/modulus.c.o
-  OBJECT_DIR = CMakeFiles/modulus.dir
+build libModFeature.a: C_STATIC_LIBRARY_LINKER__ModFeature_ CMakeFiles/ModFeature.dir/src/modulus.c.o
+  OBJECT_DIR = CMakeFiles/ModFeature.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libmodulus.a
-  TARGET_PDB = modulus.a.dbg
+  TARGET_FILE = libModFeature.a
+  TARGET_PDB = ModFeature.a.dbg
 
 
 #############################################
@@ -92,7 +92,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build modulus: phony libmodulus.a
+build ModFeature: phony libModFeature.a
 
 # =============================================================================
 # Folder targets.
@@ -109,7 +109,7 @@ build codegen: phony
 #############################################
 # Folder: /home/fatma/Documents/ITI/calculator/Modulus_Module/build
 
-build all: phony libmodulus.a
+build all: phony libModFeature.a
 
 # =============================================================================
 # Built-in targets
