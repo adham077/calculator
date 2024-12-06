@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: AddFeature
+# Project: DivFeature
 # Configurations: 
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__AddFeature_unscanned_
+rule C_COMPILER__DivFeature_unscanned_
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/usr/bin/cc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__AddFeature_unscanned_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER__AddFeature_
+rule C_STATIC_LIBRARY_LINKER__DivFeature_
   command = $PRE_LINK && /usr/local/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/local/bin/cmake --regenerate-during-build -S/home/fatma/Documents/ITI/calculator/Add_Module -B/home/fatma/Documents/ITI/calculator/Add_Module/build
+  command = /usr/local/bin/cmake --regenerate-during-build -S/home/fatma/Documents/ITI/calculator/division_cmake -B/home/fatma/Documents/ITI/calculator/division_cmake/build
   description = Re-running CMake...
   generator = 1
 

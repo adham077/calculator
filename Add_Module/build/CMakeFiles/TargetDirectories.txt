@@ -1,3 +1,3 @@
-C:/Users/Omar Alaa/Desktop/ITI/4-Git/calculator/Add_Module/build/CMakeFiles/Add.dir
-C:/Users/Omar Alaa/Desktop/ITI/4-Git/calculator/Add_Module/build/CMakeFiles/edit_cache.dir
-C:/Users/Omar Alaa/Desktop/ITI/4-Git/calculator/Add_Module/build/CMakeFiles/rebuild_cache.dir
+/home/fatma/Documents/ITI/calculator/Add_Module/build/CMakeFiles/AddFeature.dir
+/home/fatma/Documents/ITI/calculator/Add_Module/build/CMakeFiles/edit_cache.dir
+/home/fatma/Documents/ITI/calculator/Add_Module/build/CMakeFiles/rebuild_cache.dir

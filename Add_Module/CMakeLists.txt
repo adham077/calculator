@@ -1,9 +1,13 @@
-cmake_minimum_required(VERSION 3.31)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.31) 
 
-project(Add C)
+# set project name + used languages
+project(AddFeature C)
 
-include_directories("Include")
+# to add directory path 
+include_directories(${PROJECT_SOURCE_DIR}/Include) 
 
-set(C-SOURCE Add_Function.c)
+file(GLOB ADD_SRC ${PROJECT_SOURCE_DIR}/src/*.c)
 
-add_library(${PROJECT_NAME} STATIC src/Add_Function.c)
+# to create a library out of these files
+add_library(AddFeature STATIC ${ADD_SRC})
+

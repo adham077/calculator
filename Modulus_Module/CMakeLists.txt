@@ -7,7 +7,6 @@ project(ModFeature C)
 # to add directory path 
 include_directories(${PROJECT_SOURCE_DIR}/Include) 
 
-# to add all .c files in src folder
 file(GLOB MOD_SRC ${PROJECT_SOURCE_DIR}/src/*.c)
 
 # to create a library out of these files
