@@ -44,7 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/adham/iti_intake_45_/cmake_proj/calculator/build/Add_Module/cmake_install.cmake")
+  include("/home/adham/iti_intake_45_/cmake_proj/calculator/build/Modulus_Module/cmake_install.cmake")
+  include("/home/adham/iti_intake_45_/cmake_proj/calculator/build/division_cmake/cmake_install.cmake")
   include("/home/adham/iti_intake_45_/cmake_proj/calculator/build/mul_module/cmake_install.cmake")
+  include("/home/adham/iti_intake_45_/cmake_proj/calculator/build/sub_module/cmake_install.cmake")
 
 endif()
 

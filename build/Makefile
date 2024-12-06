@@ -143,6 +143,45 @@ generate_config/fast:
 .PHONY : generate_config/fast
 
 #=============================================================================
+# Target rules for targets named Add
+
+# Build rule for target.
+Add: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Add
+.PHONY : Add
+
+# fast build rule for target.
+Add/fast:
+	$(MAKE) $(MAKESILENT) -f Add_Module/CMakeFiles/Add.dir/build.make Add_Module/CMakeFiles/Add.dir/build
+.PHONY : Add/fast
+
+#=============================================================================
+# Target rules for targets named modulus
+
+# Build rule for target.
+modulus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 modulus
+.PHONY : modulus
+
+# fast build rule for target.
+modulus/fast:
+	$(MAKE) $(MAKESILENT) -f Modulus_Module/CMakeFiles/modulus.dir/build.make Modulus_Module/CMakeFiles/modulus.dir/build
+.PHONY : modulus/fast
+
+#=============================================================================
+# Target rules for targets named division
+
+# Build rule for target.
+division: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 division
+.PHONY : division
+
+# fast build rule for target.
+division/fast:
+	$(MAKE) $(MAKESILENT) -f division_cmake/CMakeFiles/division.dir/build.make division_cmake/CMakeFiles/division.dir/build
+.PHONY : division/fast
+
+#=============================================================================
 # Target rules for targets named mul
 
 # Build rule for target.
@@ -154,6 +193,19 @@ mul: cmake_check_build_system
 mul/fast:
 	$(MAKE) $(MAKESILENT) -f mul_module/CMakeFiles/mul.dir/build.make mul_module/CMakeFiles/mul.dir/build
 .PHONY : mul/fast
+
+#=============================================================================
+# Target rules for targets named Sub
+
+# Build rule for target.
+Sub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Sub
+.PHONY : Sub
+
+# fast build rule for target.
+Sub/fast:
+	$(MAKE) $(MAKESILENT) -f sub_module/CMakeFiles/Sub.dir/build.make sub_module/CMakeFiles/Sub.dir/build
+.PHONY : Sub/fast
 
 main.o: main.c.o
 .PHONY : main.o
@@ -188,7 +240,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... generate_config"
+	@echo "... Add"
+	@echo "... Sub"
 	@echo "... calculator"
+	@echo "... division"
+	@echo "... modulus"
 	@echo "... mul"
 	@echo "... main.o"
 	@echo "... main.i"

@@ -14,6 +14,18 @@
 # EXTERNAL cache entries
 ########################
 
+//No help, variable specified on the command line.
+ADD:UNINITIALIZED=ON
+
+//Value Computed by CMake
+Add_BINARY_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/build/Add_Module
+
+//Value Computed by CMake
+Add_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Add_SOURCE_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/Add_Module
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -186,8 +198,23 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Path to a program.
 CONFIG_SCRIPT:FILEPATH=/home/adham/iti_intake_45_/cmake_proj/calculator/config.py
 
+//No help, variable specified on the command line.
+MUL:UNINITIALIZED=ON
+
 //Space-separated list of operations (e.g., 'add sub mul')
-OPERATIONS:STRING=mul add sub div mod
+OPERATIONS:STRING=add mul
+
+//No help, variable specified on the command line.
+SUB:UNINITIALIZED=ON
+
+//Value Computed by CMake
+Sub_BINARY_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/build/sub_module
+
+//Value Computed by CMake
+Sub_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Sub_SOURCE_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/sub_module
 
 //Value Computed by CMake
 calculator_BINARY_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/build
@@ -197,6 +224,24 @@ calculator_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 calculator_SOURCE_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator
+
+//Value Computed by CMake
+division_BINARY_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/build/division_cmake
+
+//Value Computed by CMake
+division_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+division_SOURCE_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/division_cmake
+
+//Value Computed by CMake
+modulus_BINARY_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/build/Modulus_Module
+
+//Value Computed by CMake
+modulus_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+modulus_SOURCE_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/Modulus_Module
 
 //Value Computed by CMake
 mul_BINARY_DIR:STATIC=/home/adham/iti_intake_45_/cmake_proj/calculator/build/mul_module
@@ -296,7 +341,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

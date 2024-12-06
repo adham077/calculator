@@ -1,1 +1,1 @@
-/usr/bin/cc CMakeFiles/calculator.dir/main.c.o -o calculator  mul_module/libmul.a 
+/usr/bin/cc CMakeFiles/calculator.dir/main.c.o -o calculator  mul_module/libmul.a Add_Module/libAdd.a sub_module/libSub.a Modulus_Module/libmodulus.a division_cmake/libdivision.a 

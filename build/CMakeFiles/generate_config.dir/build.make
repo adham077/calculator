@@ -69,8 +69,8 @@ include CMakeFiles/generate_config.dir/progress.make
 CMakeFiles/generate_config: configuration.h
 
 configuration.h:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/adham/iti_intake_45_/cmake_proj/calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating configuration header for operations: mul add sub div mod"
-	cd /home/adham/iti_intake_45_/cmake_proj/calculator && /usr/bin/python3.10 /home/adham/iti_intake_45_/cmake_proj/calculator/config.py mul add sub div mod
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/adham/iti_intake_45_/cmake_proj/calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating configuration header for operations: add mul"
+	cd /home/adham/iti_intake_45_/cmake_proj/calculator && /usr/bin/python3.10 /home/adham/iti_intake_45_/cmake_proj/calculator/config.py add mul
 
 generate_config: CMakeFiles/generate_config
 generate_config: configuration.h

@@ -1,21 +1,23 @@
 #include <stdio.h>
+#include <math.h>
 #include "configuration.h"
 #include "mul.h"
 #include "sub.h"
-#include "add.h"
-#include "div.h"
-#include "mod.h"
+#include "Add_Function.h"
+#include "division.h"
+#include "modulus.h"
 
 void scan_input(float*,float*);
 
 int main(void){
-    do{
         char c;
+    do{
+        char c;        
         float a,b;
         printf("\033c");
-        printf("please enter your preffered operation: + - * / %\n ");
+        printf("please enter your preffered operation: + - * / % \n ");
         fflush(stdin);fflush(stdout);
-        scanf("%c",&c);
+        c = getchar();
         switch(c){
 
             #ifdef mul
@@ -28,28 +30,28 @@ int main(void){
             #ifdef add
             case '+':
                 scan_input(&a,&b);
-                printf("a+b=%lf\n",multiplication(a,b));
+                printf("a+b=%lf\n",AddFunction(a,b));
                 break;
             #endif
 
             #ifdef sub
             case '-':
                 scan_input(&a,&b);
-                printf("a-b=%lf\n",multiplication(a,b));
+                printf("a-b=%lf\n",subtract(a,b));
                 break;
             #endif
 
             #ifdef div
             case '/':
                 scan_input(&a,&b);
-                printf("a/b=%lf\n",multiplication(a,b));
+                printf("a/b=%lf\n",Division(a,b));
                 break;
             #endif
 
             #ifdef mod
-            case '*':
+            case '%':
                 scan_input(&a,&b);
-                printf("a%b=%lf\n",multiplication(a,b));
+                printf("a%b=%lf\n",int_modulus(a,b));
                 break;
             #endif
                        
@@ -62,7 +64,7 @@ int main(void){
         fflush(stdin);fflush(stdout);
         scanf("%c",&c);
 
-    }while(c!='n');
+    }while(getchar()!='n');
 
     return 0;
 }

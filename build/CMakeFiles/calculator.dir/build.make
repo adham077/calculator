@@ -93,6 +93,10 @@ calculator_EXTERNAL_OBJECTS =
 calculator: CMakeFiles/calculator.dir/main.c.o
 calculator: CMakeFiles/calculator.dir/build.make
 calculator: mul_module/libmul.a
+calculator: Add_Module/libAdd.a
+calculator: sub_module/libSub.a
+calculator: Modulus_Module/libmodulus.a
+calculator: division_cmake/libdivision.a
 calculator: CMakeFiles/calculator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/adham/iti_intake_45_/cmake_proj/calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable calculator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/calculator.dir/link.txt --verbose=$(VERBOSE)

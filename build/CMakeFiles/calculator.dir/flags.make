@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/adham/iti_intake_45_/cmake_proj/calculator/mul_module/inc
+C_INCLUDES = -I/home/adham/iti_intake_45_/cmake_proj/calculator/mul_module/inc -I/home/adham/iti_intake_45_/cmake_proj/calculator/Add_Module/Include -I/home/adham/iti_intake_45_/cmake_proj/calculator/sub_module/include -I/home/adham/iti_intake_45_/cmake_proj/calculator/Modulus_Module/Include -I/home/adham/iti_intake_45_/cmake_proj/calculator/division_cmake/include
 
 C_FLAGS = 
 

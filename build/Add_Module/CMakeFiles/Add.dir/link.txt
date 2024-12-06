@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAdd.a CMakeFiles/Add.dir/src/Add_Function.c.o
+/usr/bin/ranlib libAdd.a

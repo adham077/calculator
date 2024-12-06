@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
 project(division C)
-include_directories("include")
-add_library(div STATIC src/division.c)
-add_executable(division main.c)
-target_link_libraries(division PRIVATE div)
+add_library(division STATIC src/division.c)
+target_include_directories(division INTERFACE include)
+
